@@ -106,8 +106,3 @@ var menu = {
 		el_menu_page.children("#load").load(url);
 	}
 };
-
-function doThis(){
-	eval($("input[type=text]")[1].val());
-	return false;
-}
