@@ -1,0 +1,208 @@
+*{
+margin:0px;
+padding:0px;
+outline:0px;
+border:0px;
+font-family:arial;
+}
+
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+
+
+#file1{
+width:100%;
+height:400px;
+background:green;
+}
+
+
+#file1 > div {
+width:90%;
+margin:0;
+}
+
+
+
+/* loading window */
+.loading {
+position:fixed;
+bottom:0;
+left:0;
+z-index:9999999;
+width:100vw;
+height:100vh;
+background:#303030;
+background-image:url(../img/logo_name.svg);
+background-position:center;
+background-size:200px;
+background-repeat: no-repeat;
+}
+
+
+.app,
+.menu {
+position:fixed;
+top:0;
+}
+
+/* App */
+.app {
+left:0;
+width:80%;
+height:100vh;
+background:#ddd;
+}
+
+.app #title {
+font-size:14px;
+background:#303030;
+color:#ddd;
+line-height:20px;
+text-indent:5px;
+}
+
+.app #page {
+width:100%;
+height:100px;
+}
+
+/* Side Menu */
+.menu {
+right:0;
+width:20%;
+height:100vh;
+background:yellow;
+overflow:hidden;
+}
+
+.menu .btns {
+width:50px;
+height:100vh;
+background:#303030;
+float:right;
+overflow-x:hidden;
+overflow-y:scroll;
+}
+
+.menu .btns > span{
+cursor:pointer;
+}
+
+.menu .btns #logo{
+display:inline-block;
+width:40px;
+height:40px;
+margin:5px;
+background-image:url(../img/logo.svg);
+background-size:cover;
+background-repeat:no-repeat;
+}
+
+
+.menu .btns span.glyphicon{
+display:inline-block;
+transition:.1s all;
+width:100%;
+padding:10px 0;
+text-align:center;
+font-size:20px;
+color:#ddd;
+}.menu .btns span.glyphicon.in{
+background:green;
+color:#303030;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+}
+
+
+.menu .page {
+overflow:hidden;
+}
+
+.menu .page > div { display:none; }
+
+
+
+
+
+/* Pixabay */
+div#pixabay {
+width:100%;
+height:100%;
+background:green;
+position:relative;
+}
+
+div#pixabay .result,
+div#pixabay form input[type=text]{
+position:absolute;
+top:0;
+left:0;
+}
+
+div#pixabay form input[type=submit]{display:none;}
+div#pixabay form input[type=text]{
+width:100%;
+height:20px;
+line-height:20px;
+font-size:14px;
+z-index:10;
+}
+div#pixabay .result{
+z-index:9;
+width:100%;
+height:100%;
+overflow-y:scroll;
+}
+
+div#pixabay .result img:first-child{
+margin-top:30px;
+}
+div#pixabay .result img{
+display:block;
+margin:10px auto;
+max-width:100%;
+}
+
+
+/* Command */
+span#cmd.in {
+background:orange;
+}
+
+div#cmd {
+position:relative;
+width:100%;
+height:100%;
+background:orange;
+}
+
+div#cmd input[type=text],
+div#cmd .result {
+width:100%;
+height:100%;
+position:absolute;
+bottom:0px;
+left:0px;
+z-index:9;
+overflow:scroll;
+}
+
+div#cmd input[type=submit]{display:none;}
+
+div#cmd input[type=text]{
+z-index:10;
+position:absolute;
+bottom:0px;
+left:0px;
+width:100%;
+height:20px;
+}
+
+
